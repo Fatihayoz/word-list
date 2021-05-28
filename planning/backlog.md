@@ -3,6 +3,7 @@
 ## Must Haves
 
 - As a user, I want to run the project in any browser, so that I can run it on any computer.
+- As a user, I want a title, so that I can name the project.
 - As a user, I want an user guide, so that I can know how to use the program.
 - As a user, I want an input area to enter the words, so that I can enter the words easily.
 - As a user, I want to have an "add" button, so that I can add the words.
