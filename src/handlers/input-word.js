@@ -44,30 +44,38 @@ export const handleInputWord = (event) => {
 
   // ... write some code ...
   if (action === "add") {
+    // warn if it contains non-letter
     if (!isWord(text)) {
       warnings.innerHTML = `
       Your input '${text}' contains non-letter elements.
       Please, enter the words in the correct form.
       `;
+      // check the warning
       console.log(`${text} has non-letters`);
     } else {
       data.words.push(text);
+      // check the last changes
       console.log("added the text");
       console.log(data);
     }
   }
 
   if (action === "remove") {
+    // warn if the word is not in the list
     if (!data.words.includes(text)) {
       warnings.innerHTML = `
       You are trying to remove '${text}' which is not in the list. 
       Please, enter a word that is in the list.
       `;
+      // check the warning
       console.log(`${text} is not in the list`);
     } else {
       data.words.filter((word) => {
         return word !== text;
       });
+      // check the last changes
+      console.log("removed the text");
+      console.log(data);
     }
   }
 
