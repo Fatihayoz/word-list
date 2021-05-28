@@ -55,7 +55,7 @@ export const handleInputWord = (event) => {
     } else {
       data.words.push(text);
       // check the last changes
-      console.log("added the text");
+      console.log(`added the ${text}`);
       console.log(data);
     }
   }
@@ -72,7 +72,7 @@ export const handleInputWord = (event) => {
     } else {
       data.words.splice(data.words.indexOf(text), 1);
       // check the last changes
-      console.log("removed the text");
+      console.log(`removed the ${text}`);
       console.log(data);
     }
   }
