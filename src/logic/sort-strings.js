@@ -12,6 +12,9 @@
  * - z: reverse alphabetical order
  * if the sortType is not one of these 6 options, a copy of toSort is returned
  * @returns {string[]} a new sorted array containing the same strings as toSort
+ * @example
+ *
+ * // ... write this!
  */
 export const sortStrings = (toSort = "", sortType = "oldest") => {
   const sorted = [...toSort];
