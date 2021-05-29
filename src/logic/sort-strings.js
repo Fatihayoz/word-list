@@ -16,4 +16,26 @@
  *
  * // ... write this!
  */
-export const sortStrings = () => {};
+export const sortStrings = (toSort = "", sortType = "oldest") => {
+  const sortedString = [...toSort];
+  if (sortType === "newest") {
+    return sortedString.reverse();
+  }
+  if (sortType === "a") {
+    return sortedString.sort();
+  }
+  if (sortType === "z") {
+    return sortedString.sort().reverse();
+  }
+  if (sortType === "shortest") {
+    return sortedString.sort((a, b) => {
+      return a.length - b.length;
+    });
+  }
+  if (sortType === "longest") {
+    return sortedString.sort((a, b) => {
+      return b.length - a.length;
+    });
+  }
+  return sortedString;
+};
