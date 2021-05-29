@@ -1,3 +1,53 @@
-#warning {
+body {
+  background-color: rgb(243, 243, 250);
+  font-family: sans-serif; 
+  font-size: large;
+}
+
+.title, .user-guide, .base {
+  text-align: center;
+}
+
+.user-guide {
+  font-size: calc(7px + 1vw);
+}
+
+.add-btn {
+  color: white;
+  background-color: green;
+  text-transform: capitalize;
+  font-size: calc(5px + 1vw);
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+.remove-btn {
+  color: white;
+  background-color: red;
+  text-transform: capitalize;
+  font-size: calc(5px + 1vw);
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+.holder {
+  font-size: calc(5px + 1vw);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.dropbox {
+  background-color: rgb(225, 242, 242);
+  font-size: calc(5px + 1vw);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#warnings {
   color: red;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
 }
