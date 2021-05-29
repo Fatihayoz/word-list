@@ -43,7 +43,7 @@ export const handleInputWord = (event) => {
   */
 
   // ... write some code ...
-  if (action === "add") {
+  if (action === "Add") {
     // warn if it contains non-letter
     if (!isWord(text)) {
       warnings.innerHTML = `
@@ -60,7 +60,7 @@ export const handleInputWord = (event) => {
     }
   }
 
-  if (action === "remove") {
+  if (action === "Remove") {
     // warn if the word is not in the list
     if (!data.words.includes(text)) {
       warnings.innerHTML = `
