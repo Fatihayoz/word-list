@@ -2,22 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>word list</title>
 
     <link href="./public/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div id="root">
+    <!--header section-->
+    <header>
+      <h1 class="title">Create and Sort a Word List</h1>
+    </header>
+    <!--article-->
+    <div class="user-guide">
+      <h3>Instructions:</h3>
+      <pre>
+    1) Press "Add" button to add words to the list
+    2) Press "Remove" button to remove words from the list
+    3) Do not use non-letters such as numbers or punctuation
+    4) Use dropdown menu to sort the words according to 
+    enterance time, alphabetical order or length.
+      </pre>
+    </div>
+    <div id="root" class="base">
       <form id="input-form">
-        <input name="text" placeholder="new word" />
-        <input type="button" value="add" />
-        <input type="button" value="remove" />
+        <input name="text" placeholder="new word" class="holder"/>
+        <input type="button" value="Add" class="add-btn"/>
+        <input type="button" value="Remove" class="remove-btn"/>
       </form>
       <code id="warnings" class="warning"></code>
       <br />
       sort:
-      <select id="sort-type">
+      <select id="sort-type" class="dropbox">
         <option value="oldest">old -> new</option>
         <option value="newest">new -> old</option>
         <option value="a">a -> z</option>
@@ -25,7 +41,7 @@
         <option value="shortest">short -> long</option>
         <option value="longest">long -> short</option>
       </select>
-      <div id="list-container"></div>
+      <div id="list-container" class="list"></div>
     </div>
 
     <script type="module" src="./src/init/index.js"></script>
