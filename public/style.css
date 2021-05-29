@@ -1,10 +1,12 @@
 body {
   background-color: rgb(243, 243, 250);
-  font-family: sans-serif; 
+  font-family: sans-serif;
   font-size: large;
 }
 
-.title, .user-guide, .base {
+.title,
+.user-guide,
+.base {
   text-align: center;
 }
 

@@ -1,6 +1,6 @@
-import { data } from '../data.js';
-import { sortStrings } from '../logic/sort-strings.js';
-import { updateList } from '../procedures/update-list.js';
+import { data } from "../data.js";
+import { sortStrings } from "../logic/sort-strings.js";
+import { updateList } from "../procedures/update-list.js";
 
 /**
  * Entry point for users sorting the list of words in this app.
@@ -11,7 +11,7 @@ import { updateList } from '../procedures/update-list.js';
 export const handleSortWords = (event) => {
   /* -- entry point for sorting the words -- */
   // debugger;
-  console.log('-- handler: sort words --');
+  console.log("-- handler: sort words --");
 
   /* -- gather user input from DOM -- */
   const howToSort = event.target.value;
