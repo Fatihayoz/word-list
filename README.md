@@ -81,10 +81,11 @@ So you're ready to start coding? If you haven't cloned this repository already y
 
 ## Running the Site
 
-This is a static website that only uses HTML, CSS and JavaScript, so you can run it directly from VSCode using `liveServer` or another static server like `http-server` or `study-lenses`.
+This is a static website that only uses HTML, CSS and JavaScript, so you can run it using any static server.  But the simplest way to get started is to use the dev server included with this repo:
 
-- `index.html` will run your code
-- `demo.html` will run the example website for reverse-engineering
+- `npm run dev`: this will open `index.html` in your browser and automatically refresh whenever you change your code.
+
+Navigating to `demo.html` will run the example website for reverse-engineering.
 
 ---
 
@@ -110,7 +111,7 @@ This repository comes with features to help you and your group write good code. 
 
 Remember the `.lint-pass.txt`, `.test-pass.txt`, ... files from Practice Code Review? Enough of that! It's time for the real deal. With this project repository your code quality results will not be written into separate files, but will be checked automatically by GitHub. Any mistakes and your PR not be able to merge.
 
-When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/worflows):
+When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/workflows):
 
 - **Lint JavaScript CI**: Lints all the .js files in your `/src` folder, if there are any warnings or errors the check will fail.
 - **Lint CSS CI**: lints all the .css files in your `/public` folder, if there are any warnings or errors the check will fail.
