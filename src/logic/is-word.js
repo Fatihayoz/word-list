@@ -7,4 +7,4 @@
  *
  * // ... write this!
  */
-export const isWord = (text = '') => /^[a-zA-Z]+$/.test(text);
+export const isWord = (text = "") => /^[a-zA-Z]+$/.test(text);
